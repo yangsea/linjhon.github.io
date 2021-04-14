@@ -11,12 +11,13 @@ module.exports = {
     "/": {
       lang: "zh-CN", // 将会被设置为 <html> 的 lang 属性
       title: "叶落秋明",
-      description: "见一叶落而知岁之将暮",
+      description: "见一叶落而知岁之将暮，观千树红才晓秋之已深。",
     },
     "/en/": {
       lang: "en-US",
       title: "叶落秋明",
-      description: "You may know the age by a falling leaf",
+      description:
+        "You may know the age by a falling leaf, View thousands of trees red dawn autumn has been deep.",
     },
   },
   head: [
@@ -28,7 +29,7 @@ module.exports = {
         content: "width=device-width,initial-scale=1,user-scalable=no",
       },
     ],
-    ["link", { rel: "icon", href: "/img/maple_leaf.png" }],
+    ["link", { rel: "icon", href: "favicon.ico" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
