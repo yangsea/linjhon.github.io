@@ -1,0 +1,20 @@
+{
+  "name": "叶落秋明",
+  "short_name": "YLQM",
+  "icons": [
+    {
+      "src": "/img/my_avatar.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/my_avatar.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#db5534"
+}
