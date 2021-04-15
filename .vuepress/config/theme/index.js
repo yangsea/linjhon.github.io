@@ -1,5 +1,5 @@
 module.exports = {
-  type: "blog",
+  type: "customHome",
   // 搜索设置
   search: true,
   searchMaxSuggestions: 10,

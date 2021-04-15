@@ -37,10 +37,12 @@
       <div v-show="recoShowModule" class="home-blog-wrapper">
         <div class="blog-list">
           <!-- 博客列表 -->
-          <note-abstract
-            :data="$recoPosts"
-            @paginationChange="paginationChange"
-          />
+          <client-only>
+            <note-abstract
+              :data="$recoPosts"
+              @paginationChange="paginationChange"
+            />
+          </client-only>
         </div>
         <div class="info-wrapper">
           <PersonalInfo />
