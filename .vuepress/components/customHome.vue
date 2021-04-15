@@ -1,6 +1,6 @@
 <template>
   <div class="home-blog">
-    <div class="hero" :style="{}">
+    <div class="hero" :style="{...bgImageStyle}">
       <div>
         <ModuleTransition>
           <img
@@ -133,23 +133,23 @@ export default defineComponent({
       instance.$recoPosts.filter((post) => post.path.includes("post"))
     );
 
-    // const bgImageStyle = computed(() => {
-    //   const url = instance.$frontmatter.bgImage
-    //     ? instance.$withBase(instance.$frontmatter.bgImage)
-    //     : require("../../images/bg.svg");
+    const bgImageStyle = computed(() => {
+      const url = instance.$frontmatter.bgImage
+        ? instance.$withBase(instance.$frontmatter.bgImage)
+        : require("../assets/img/bg.svg");
 
-    //   const initBgImageStyle = {
-    //     textAlign: "center",
-    //     overflow: "hidden",
-    //     background: `url(${url}) center/cover no-repeat`,
-    //   };
+      const initBgImageStyle = {
+        textAlign: "center",
+        overflow: "hidden",
+        background: `url(${url}) center/cover no-repeat`,
+      };
 
-    //   const { bgImageStyle } = instance.$frontmatter;
+      const { bgImageStyle } = instance.$frontmatter;
 
-    //   return bgImageStyle
-    //     ? { ...initBgImageStyle, ...bgImageStyle }
-    //     : initBgImageStyle;
-    // });
+      return bgImageStyle
+        ? { ...initBgImageStyle, ...bgImageStyle }
+        : initBgImageStyle;
+    });
 
     onMounted(() => {
       state.heroHeight = document.querySelector(".hero").clientHeight;
@@ -160,7 +160,7 @@ export default defineComponent({
       recoShowModule,
       heroImageStyle,
       filterRecoPosts,
-      // bgImageStyle,
+      bgImageStyle,
       ...toRefs(state),
       getOneColor,
     };
