@@ -15,7 +15,9 @@
   },
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build"
+    "build": "vuepress build",
+    "server": "http-server .vuepress/dist",
+    "dist": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",
