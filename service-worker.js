@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a38d2dc39ae68fff8e203ef61b5d7907"
+    "revision": "895971a76ee223e53ebcb6bd1022f85f"
   },
   {
     "url": "assets/css/0.styles.a18cd95b.css",
@@ -42,8 +42,8 @@ self.__precacheManifest = [
     "revision": "5e29aa3a73743f119a54bce90900ee50"
   },
   {
-    "url": "assets/js/10.1fea1e8d.js",
-    "revision": "7dba681c6f835c27a3f71f26ff4de458"
+    "url": "assets/js/10.de5d9819.js",
+    "revision": "8cee3c9fdac5c9f2467d6221b6affbc8"
   },
   {
     "url": "assets/js/11.9d871764.js",
@@ -62,8 +62,12 @@ self.__precacheManifest = [
     "revision": "06d912986e5a3c55602f3973287a0b93"
   },
   {
-    "url": "assets/js/15.42698776.js",
-    "revision": "0bce27ea68bbe703e1243a532c66c93b"
+    "url": "assets/js/15.bf86eabc.js",
+    "revision": "a08a5f754439e88f14ac73372529288d"
+  },
+  {
+    "url": "assets/js/16.a50a29d9.js",
+    "revision": "f572391c182d22e3b5a44d20b5b07ec2"
   },
   {
     "url": "assets/js/3.241b572c.js",
@@ -90,24 +94,24 @@ self.__precacheManifest = [
     "revision": "ff7268a25c85dc56a0c0db798783a6d5"
   },
   {
-    "url": "assets/js/9.d1586126.js",
-    "revision": "c2ff4d12b3a109a2f130833fe1904207"
+    "url": "assets/js/9.d628e268.js",
+    "revision": "9230fce41ebb90915fec0b0e554185f4"
   },
   {
-    "url": "assets/js/app.9c51e917.js",
-    "revision": "ac080dd331416670c99a1edf3d64babf"
+    "url": "assets/js/app.845d0528.js",
+    "revision": "256d86d7454cff4e0215fc490f0fba08"
   },
   {
     "url": "categories/index.html",
-    "revision": "397de86ccf904d6f9864a3b983b9bd9e"
+    "revision": "7561d1443bd1a1d1e6e208df87b249e7"
   },
   {
     "url": "en/index.html",
-    "revision": "4101701d39b2acb843f463a702756c3e"
+    "revision": "f9a664edb70d168a59bea4ff2b1ff058"
   },
   {
     "url": "front-end/interview/topic.html",
-    "revision": "3277f740f665ad26b55902cf36eb933e"
+    "revision": "725d9f274c62e1e67bb326c2a35dd312"
   },
   {
     "url": "img/maple_leaf.png",
@@ -119,15 +123,19 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "de5e0c17c3a344109dbafe895ff55f30"
+    "revision": "e859e7f93082cc5d14194fc53334e833"
+  },
+  {
+    "url": "post/test.html",
+    "revision": "d7b703416ac765a23e1179287e827b0d"
   },
   {
     "url": "tag/index.html",
-    "revision": "115a97d6472ff20d4b5afdf9622ad057"
+    "revision": "627eec5637ce2252eea5d6f87c82dbbb"
   },
   {
     "url": "timeline/index.html",
-    "revision": "afe3738b0c241908b1f28744362373c7"
+    "revision": "3aa1322726ae66a7d16f46739f617b31"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
