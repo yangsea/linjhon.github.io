@@ -4,6 +4,10 @@ var themeConfig = require("./config/theme");
 
 module.exports = {
   title: "叶落秋明",
+  extraWatchFiles: [
+    ".vuepress/config/**/**", // 使用相对路径
+  ],
+  permalink: "/post/:year/:month/:day/:slug",
   theme: "reco",
   themeConfig,
   plugins,
@@ -17,7 +21,7 @@ module.exports = {
       lang: "en-US",
       title: "叶落秋明",
       description:
-        "You may know the age by a falling leaf, View thousands of trees red dawn autumn has been deep.",
+        "Seeing the leaves of the tree fall, you know that the year is almost over.\n View thousands of trees red dawn autumn has been deep.",
     },
   },
   head: [
