@@ -1,0 +1,27 @@
+diff --git a/node_modules/@vuepress/shared-utils/lib/slugify.js b/node_modules/@vuepress/shared-utils/lib/slugify.js
+index b388ad1..58a4405 100644
+--- a/node_modules/@vuepress/shared-utils/lib/slugify.js
++++ b/node_modules/@vuepress/shared-utils/lib/slugify.js
+@@ -1,11 +1,22 @@
+ "use strict";
+ // string.js slugify drops non ascii chars so we have to
+ // use a custom implementation here
++
++const pinyin = require('pinyin');
++function toPinyin(path) {
++  const pinyinArr = pinyin(path, {
++    style: pinyin.STYLE_NORMAL,
++    segment: false,
++  }).flat();
++  return pinyinArr.join("-").replace(/\s/, "");
++}
++
+ // eslint-disable-next-line no-control-regex
+ const rControl = /[\u0000-\u001f]/g;
+ const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’–—<>,.?/]+/g;
+ const rCombining = /[\u0300-\u036F]/g;
+ module.exports = function slugify(str) {
++    str = toPinyin(str)
+     // Split accented characters into components
+     return str.normalize('NFKD')
+         // Remove accents
