@@ -5,9 +5,13 @@ export default ({
   Vue,
   options,
   router,
-  siteData
+  siteData,
+  isServer
 }) => {
-  setTimeout(()=>{
-    Vue.mixin(postMixins)
-  })
+  if(!isServer){
+    setTimeout(()=>{
+      Vue.mixin(postMixins)
+    })
+  }
+  
 }
