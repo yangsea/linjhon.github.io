@@ -26,10 +26,6 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
-    "url": "404.html",
-    "revision": "d2ca9ec4a859fe8dbde5b18560367e88"
-  },
-  {
     "url": "assets/css/0.styles.2188bc08.css",
     "revision": "5425a9eefd8f221b11f96ddf6360f434"
   },
@@ -42,8 +38,8 @@ self.__precacheManifest = [
     "revision": "5e29aa3a73743f119a54bce90900ee50"
   },
   {
-    "url": "assets/js/10.5ce84121.js",
-    "revision": "662fa507aafcddeaa42abb4c47181dcf"
+    "url": "assets/js/10.6e21a014.js",
+    "revision": "cd9f22f5a61df826a0d8552dda0b4ea3"
   },
   {
     "url": "assets/js/11.d2656cc9.js",
@@ -54,20 +50,32 @@ self.__precacheManifest = [
     "revision": "653360f9492af5121baf4a8ef3f24a77"
   },
   {
-    "url": "assets/js/13.820e1a29.js",
-    "revision": "ae698c6f2a6431efcc98e5ed4c5c3860"
+    "url": "assets/js/13.8f3b19c1.js",
+    "revision": "e18e81eaee48275c635f61f36056057c"
   },
   {
-    "url": "assets/js/14.c2dbefcc.js",
-    "revision": "cc3bcc3cecef4113427ff7711d423c67"
+    "url": "assets/js/14.67c5171a.js",
+    "revision": "a17d6fa1d06ca0aa26f5c9f06a539a9f"
   },
   {
-    "url": "assets/js/15.c98c9f83.js",
-    "revision": "28ec23c6c3b84c38095b7eb27e50f6c3"
+    "url": "assets/js/15.4687e5de.js",
+    "revision": "35593bc9301d0e7ee57b0dfef73b4099"
   },
   {
-    "url": "assets/js/16.9c6ccf80.js",
-    "revision": "a26c202bf1382ba3b0fb9d367418eebf"
+    "url": "assets/js/16.940b046c.js",
+    "revision": "77a7ed245c2bec9344132975031256c7"
+  },
+  {
+    "url": "assets/js/17.b9ae5d3f.js",
+    "revision": "d7bb5248f65c42e0891937a32c0eef1f"
+  },
+  {
+    "url": "assets/js/18.363b2dc4.js",
+    "revision": "2bb717156aa8ce0bc2ab57dfd6cf3b0b"
+  },
+  {
+    "url": "assets/js/19.6b770da5.js",
+    "revision": "3f492f9d7a5db02d336df6690b5934b0"
   },
   {
     "url": "assets/js/3.241b572c.js",
@@ -98,20 +106,16 @@ self.__precacheManifest = [
     "revision": "6c577c1ff34eb620a2fe8273de319f59"
   },
   {
-    "url": "assets/js/app.50e97cc4.js",
-    "revision": "2b236f6823ef8b9e9cc90ef774c91c72"
+    "url": "assets/js/app.060ca1d5.js",
+    "revision": "1d43fbd1f3de1be45c073127759d0836"
   },
   {
     "url": "categories/index.html",
-    "revision": "71af4aef7887de4fe61065ddd9b0931e"
+    "revision": "7b3bc4368f0f47ba0ce863a26ee295b4"
   },
   {
     "url": "en/index.html",
-    "revision": "caaae572388d83d1fd18a27e50bb1f12"
-  },
-  {
-    "url": "front-end/interview/topic.html",
-    "revision": "45a2635deffc2d86a26efecff7b97e93"
+    "revision": "73e367fe1f39da7ee9457e87df9ec214"
   },
   {
     "url": "img/maple_leaf.png",
@@ -123,19 +127,39 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d6019a56b564d0ee1b916c4046b078bb"
+    "revision": "e3aa4a7bbac4e3f797047b7afec9d107"
   },
   {
-    "url": "post/test.html",
-    "revision": "d0d7ba5de30877640afdf42a418357b1"
+    "url": "post/1970/01/01/_404/index.html",
+    "revision": "0027cd9f0b7bad55cbc2f18131156fae"
+  },
+  {
+    "url": "post/1970/01/01/other/index.html",
+    "revision": "4d11c70b4f6a85c65310cafc4274ffe9"
+  },
+  {
+    "url": "post/1970/01/01/topic/index.html",
+    "revision": "d6e4608c5b8cef132dd5ec92fbb22837"
+  },
+  {
+    "url": "post/2017/02/12/tuo-zhuai-han-shu-de-jian-dan-feng-zhuang/index.html",
+    "revision": "ca359d7304af726910e4833f9b974db0"
+  },
+  {
+    "url": "post/2017/02/19/js-yun-dong/index.html",
+    "revision": "0d7f1afb8e595b80c8e2c8e29522cb10"
+  },
+  {
+    "url": "post/2017/02/25/mo-ni-bai-du-sou-suo-xia-la-ti-shi/index.html",
+    "revision": "1b540e2d74d2728a5198bb93baeb537e"
   },
   {
     "url": "tag/index.html",
-    "revision": "044f24d077f31854358a2efeb252d11b"
+    "revision": "c3f6e6bc9994ab050f9a73878fcaea2e"
   },
   {
     "url": "timeline/index.html",
-    "revision": "68a6f155455c8eec000382f0ba613557"
+    "revision": "3a547fc1826a5d09a48544b48f8c6cca"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
