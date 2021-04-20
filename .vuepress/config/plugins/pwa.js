@@ -1,18 +1,9 @@
 module.exports = [
-  ["@vuepress/pwa"],
   [
-    "@vuepress/plugin-pwa-popup",
+    "@vuepress/pwa",
     {
-      locales: {
-        "/": {
-          message: "New content is available.",
-          buttonText: "Refresh",
-        },
-        "/zh/": {
-          message: "发现新内容可用",
-          buttonText: "刷新",
-        },
-      },
+      serviceWorker: true,
+      updatePopup: true,
     },
   ],
 ];

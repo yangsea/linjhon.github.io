@@ -3,10 +3,7 @@ const path = require("path");
 
 const resolve = (dir) => path.join(__dirname, dir);
 
-let plugins = [
-  // 页面滚动时自动激活侧边栏链接的插件
-  ["@vuepress/active-header-links"],
-];
+let plugins = [];
 
 // 自动添加当前目录下其他plugin
 fs.readdirSync(resolve("./")).forEach((key) => {
