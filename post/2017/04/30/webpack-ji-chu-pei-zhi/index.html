@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>模拟百度搜索下拉提示 | 叶落秋明</title>
+    <title>webpack 基础配置 | 叶落秋明</title>
     <meta name="generator" content="VuePress 1.8.2">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -17,7 +17,7 @@
     <meta name="msapplication-TileImage" content="/img/maple_leaf.png">
     <meta name="msapplication-TileColor" content="#000000">
     
-    <link rel="preload" href="/assets/css/0.styles.2188bc08.css" as="style"><link rel="preload" href="/assets/js/app.6ff0263c.js" as="script"><link rel="preload" href="/assets/js/4.f287a95f.js" as="script"><link rel="preload" href="/assets/js/1.d9424b70.js" as="script"><link rel="preload" href="/assets/js/27.f155313a.js" as="script"><link rel="prefetch" href="/assets/js/10.2eb4e950.js"><link rel="prefetch" href="/assets/js/11.d2656cc9.js"><link rel="prefetch" href="/assets/js/12.6441924a.js"><link rel="prefetch" href="/assets/js/13.75e04265.js"><link rel="prefetch" href="/assets/js/14.b2927a2f.js"><link rel="prefetch" href="/assets/js/15.b22df9f1.js"><link rel="prefetch" href="/assets/js/16.784a3d1d.js"><link rel="prefetch" href="/assets/js/17.3d507a86.js"><link rel="prefetch" href="/assets/js/18.4eac4255.js"><link rel="prefetch" href="/assets/js/19.ae0c9c47.js"><link rel="prefetch" href="/assets/js/20.8e97cb1a.js"><link rel="prefetch" href="/assets/js/21.4d9ed55c.js"><link rel="prefetch" href="/assets/js/22.24797963.js"><link rel="prefetch" href="/assets/js/23.073a6979.js"><link rel="prefetch" href="/assets/js/24.0f679df3.js"><link rel="prefetch" href="/assets/js/25.d2792ea7.js"><link rel="prefetch" href="/assets/js/26.e5570130.js"><link rel="prefetch" href="/assets/js/28.efc0be11.js"><link rel="prefetch" href="/assets/js/29.c865086a.js"><link rel="prefetch" href="/assets/js/3.241b572c.js"><link rel="prefetch" href="/assets/js/30.6a2e00e8.js"><link rel="prefetch" href="/assets/js/31.334b7a26.js"><link rel="prefetch" href="/assets/js/32.947d6d77.js"><link rel="prefetch" href="/assets/js/5.eab64ae4.js"><link rel="prefetch" href="/assets/js/6.1b9d70a1.js"><link rel="prefetch" href="/assets/js/7.180d60b3.js"><link rel="prefetch" href="/assets/js/8.2c05f7de.js"><link rel="prefetch" href="/assets/js/9.d1e3ad7e.js">
+    <link rel="preload" href="/assets/css/0.styles.2188bc08.css" as="style"><link rel="preload" href="/assets/js/app.6ff0263c.js" as="script"><link rel="preload" href="/assets/js/4.f287a95f.js" as="script"><link rel="preload" href="/assets/js/1.d9424b70.js" as="script"><link rel="preload" href="/assets/js/22.24797963.js" as="script"><link rel="prefetch" href="/assets/js/10.2eb4e950.js"><link rel="prefetch" href="/assets/js/11.d2656cc9.js"><link rel="prefetch" href="/assets/js/12.6441924a.js"><link rel="prefetch" href="/assets/js/13.75e04265.js"><link rel="prefetch" href="/assets/js/14.b2927a2f.js"><link rel="prefetch" href="/assets/js/15.b22df9f1.js"><link rel="prefetch" href="/assets/js/16.784a3d1d.js"><link rel="prefetch" href="/assets/js/17.3d507a86.js"><link rel="prefetch" href="/assets/js/18.4eac4255.js"><link rel="prefetch" href="/assets/js/19.ae0c9c47.js"><link rel="prefetch" href="/assets/js/20.8e97cb1a.js"><link rel="prefetch" href="/assets/js/21.4d9ed55c.js"><link rel="prefetch" href="/assets/js/23.073a6979.js"><link rel="prefetch" href="/assets/js/24.0f679df3.js"><link rel="prefetch" href="/assets/js/25.d2792ea7.js"><link rel="prefetch" href="/assets/js/26.e5570130.js"><link rel="prefetch" href="/assets/js/27.f155313a.js"><link rel="prefetch" href="/assets/js/28.efc0be11.js"><link rel="prefetch" href="/assets/js/29.c865086a.js"><link rel="prefetch" href="/assets/js/3.241b572c.js"><link rel="prefetch" href="/assets/js/30.6a2e00e8.js"><link rel="prefetch" href="/assets/js/31.334b7a26.js"><link rel="prefetch" href="/assets/js/32.947d6d77.js"><link rel="prefetch" href="/assets/js/5.eab64ae4.js"><link rel="prefetch" href="/assets/js/6.1b9d70a1.js"><link rel="prefetch" href="/assets/js/7.180d60b3.js"><link rel="prefetch" href="/assets/js/8.2c05f7de.js"><link rel="prefetch" href="/assets/js/9.d1e3ad7e.js">
     <link rel="stylesheet" href="/assets/css/0.styles.2188bc08.css">
   </head>
   <body>
@@ -49,7 +49,7 @@
   GitHub
   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
       多语言
-    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/2017/02/25/mo-ni-bai-du-sou-suo-xia-la-ti-shi/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/2017/04/30/webpack-ji-chu-pei-zhi/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
   简体中文
 </a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link"><i class="undefined"></i>
   English
@@ -79,126 +79,117 @@
   GitHub
   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
       多语言
-    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/2017/02/25/mo-ni-bai-du-sou-suo-xia-la-ti-shi/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/post/2017/04/30/webpack-ji-chu-pei-zhi/" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="undefined"></i>
   简体中文
 </a></li><li class="dropdown-item"><!----> <a href="/en/" class="nav-link"><i class="undefined"></i>
   English
-</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>模拟百度搜索下拉提示</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>linjhon</span>
+</a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>webpack 基础配置</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>linjhon</span>
             
           <!---->
           2021
-        </a></span></div></div> <div data-v-1156296a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">模拟百度搜索下拉提示</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>linjhon</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2017/2/25</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/post/2017/02/25/mo-ni-bai-du-sou-suo-xia-la-ti-shi/" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><p>![Uploading 楼层效果_023685.gif . . .]
-<img src="http://upload-images.jianshu.io/upload_images/912092-e21fb2a272d96323.gif?imageMogr2/auto-orient/strip" alt="模拟百度搜索下拉提示.gif"></p> <p>###引入下拉提示数据</p> <ul><li>要模拟百度搜索的下拉提示，首先我们需要的就是百度搜索下拉框的借口：
-<code>https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=你&amp;cb=baidu</code></li> <li>链接地址对应的信息就是一个调用的函数：
-<code>baidu({q:&quot;你&quot;,p:false,s:[&quot;你到底有没有爱过我&quot;,&quot;你是我的小苹果&quot;,&quot;你是我的眼&quot;,&quot;你不知道的事&quot;,&quot;你懂的&quot;,&quot;你是男的我也爱&quot;,&quot;你好&quot;,&quot;逆战&quot;,&quot;你是我兄弟&quot;,&quot;你懂的网站&quot;]});</code></li></ul> <ul><li>通过调整链接中<code>?wd=</code>之后的关键词，我们可以获得其他的搜索提示。</li> <li>修改<code>&amp;cb=</code>之后的内容,可以更换调用的函数名。</li> <li>根据这些，我们可以将这个链接通过<code>&lt;script&gt;</code>的<code>src</code>属性来引入;即这个调用的函数为 html 的一部分。</li> <li>最后，只要我们创建对应的函数，就可以使用里面的数据;</li></ul> <p>###JSONP
-这种引入数据的方式，我们称为 jsonp<code>[json with padding]</code>。一个非官方的协议，通过 javascript callback 的形式，实现跨域访问。</p> <ul><li><strong>跨域</strong>
-为什么会出现跨域？因为浏览器的<code>【同源策略】</code>。</li> <li><strong>同源策略</strong></li></ul> <ol><li><code>【同源策略】</code>是浏览器的一种约定，它是浏览器的核心，也是最基本的安全功能。</li> <li>它规定了浏览器在<code>不同端口</code>、<code>不同协议</code>、<code>不同域名</code>等多种情况下不能互相通信，即一个域名只能获取自身域名下的信息。</li></ol> <ul><li><strong>解决跨域的方式</strong>：
-除了 jsonp 之外，还可以让<code>后端代理（因为后端不存在跨域）</code>以及<code>flash+xml</code>的方式。</li></ul> <p>####还有几点需要注意的是</p> <ol><li>我们使用的键盘弹起事件，每次弹起时都会创建一个<code>&lt;script&gt;</code>，这就需要我们将这些节点都删除。</li> <li>输入框以及数据不为空时，我们才将得到的数据用字符串拼接的方式输入到 html 页面中。</li> <li><code>可能是只有下拉的数据请求的缘故，感觉速度比百度的快许多</code></li></ol> <p>最后奉上页面源码：<code>（以上仅是分享，如有任何问题，请告知删除）</code></p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;/&gt;
-&lt;title&gt;百度好几下,你才知道!&lt;/title&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-    * {
-        margin: 0;
-        padding: 0;
+        </a></span></div></div> <div data-v-1156296a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">webpack 基础配置</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>linjhon</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>2017/4/30</span></i> <i class="iconfont reco-eye" data-v-1ff7123e><span id="/post/2017/04/30/webpack-ji-chu-pei-zhi/" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1ff7123e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default"><blockquote><p>webpack 虽然是 Facebook 专门为了它的 React 框架而开发的前端自动化工具。但并不是没有了 React，它就无法使用。它提出了“一切皆模块的理念”，因此我们可以把所需要的框架、类库、插件甚至是图片、CSS、字体等等都引入。它的引入规范基本符合模块化规范：AMD、CMD、UMD、CommonJS 等等。所以即使你之前从未使用过 WebPack，但它也可以很好的兼容你之前的项目。</p></blockquote> <p>##安装</p> <p>既然要使用，那就必须要安装它,前提是你已经安装了 nodejs。</p> <div class="language- extra-class"><pre class="language-text"><code>npm i webpack -g
+</code></pre></div><p>之后，我们就需要在项目文件夹下创建一个文件：<code>webpack.config.js</code>。
+这是默认名字,当然我们也可以使用修改的文件名，</p> <p>##基本使用
+下面是一段非常简单使用：</p> <div class="language- extra-class"><pre class="language-text"><code>var webpack = require('webpack');
+module.exports = {
+	entry: './src/index.js', // 入口文件
+	output: { // 出口文件
+		path: './build',
+		publicPath: '/build/',
+		filename: 'bundle.js' //输出文件
+	},
+	module: { // 操作模块
+		loaders: [ //加载器
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader?presets[]=es2015&amp;presets[]=react'
+			}
     }
-    img {
-        border: 0;
-    }
-    ol, ul, li {
-        list-style: none;
-    }
-    body{font-family:'microsoft yahei';overflow:hidden;}
-    #baidu{margin:0 auto;width:641px;position: relative;min-height:293px;}
-    #baidu .logo{text-align: center;position:absolute;bottom:40px;width:100%;height: 181px;}
-    #baidu .logo img{margin:33px auto 0 auto;}
-    #baidu form{position:absolute;bottom:0;}
-    #baidu input{float: left;outline:none;}
-    #baidu .search{width:535px;height:40px;padding:0 10px;font-size:14px;border:1px solid #ccc;box-sizing:border-box;}
-    #baidu .hover{border:1px solid #999;}
-    #baidu .focus{border:1px solid #38f;}
-    #baidu .btn{width: 102px;height: 40px;border:0;background:#3388FF;color:#fff;font-size:14px;cursor:pointer;}
-    #baidu ul{width:535px;border:1px solid #999;font-size:12px;box-sizing:border-box;display: none;position:absolute;top:39px;}
-    #baidu ul li{}
-    #baidu ul li a{display: block;text-decoration:none;color:#333;padding:5px 10px;}
-    #baidu ul li a:hover{background:#eee;}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id=&quot;baidu&quot;&gt;
-        &lt;div class=&quot;logo&quot;&gt;
-            ![](https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png)
-        &lt;/div&gt;
-        &lt;form&gt;
-            &lt;input type=&quot;text&quot; class=&quot;search&quot;&gt;
-            &lt;input type=&quot;button&quot; value=&quot;百度好几下&quot; class=&quot;btn&quot;&gt;
-            &lt;ul id=&quot;select&quot;&gt;
-            &lt;/ul&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-    &lt;script&gt;
-        var oBaidu=document.getElementById('baidu');
-        var oSearch=oBaidu.getElementsByTagName('input')[0];
-        var oBtn=oBaidu.getElementsByTagName('input')[1];
-        var oUl=document.getElementById('select');
-        function baidu(data){
-             var str='';
-            if(oSearch.value!='' &amp;&amp; data.s.length!=0){
-            //输入框以及数据不为空时执行。
-                for (var i = 0; i &lt; data.s.length; i++) {
-                    str+='&lt;li&gt;&lt;a href=&quot;https://www.baidu.com/s?ie=utf-8&amp;f=3&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd='+data.s[i]+'&quot;&gt;'+data.s[i]+'&lt;/a&gt;&lt;/li&gt;';
-                };
-                oUl.innerHTML=str;
-                oUl.style.display='block';
-                var aLi=oUl.getElementsByTagName('li');
-                tab(aLi,data.s.length)
-            }else{
-                oUl.style.display='none';
-            }
+</code></pre></div><p>这段配置实现的功能就是将 js 文件中 ES6、JSX 的语法编译成 es3；</p> <p>##基础配置
+1.webpack 的配置文件会暴露出一个对象，格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+　　//配置项
+}
+</code></pre></div><p>这里使用的就是 CommonJS 的规范来暴露接口。</p> <p>2.基本属性</p> <ul><li><p><strong>entry</strong>:打包的入口文件,通过 html 中的 script 标签直接引入。</p></li> <li><p><strong>output</strong>:配置打包文件名、路径。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>output: { // 出口文件
+    path: './build',
+    publicPath: '/build/',
+    filename: 'bundle.js' //输出文件
+}
+</code></pre></div><ul><li><p><strong>fileName</strong>:定义输出文件名，</p></li> <li><p><strong>path</strong>:定义输出文件路径</p></li> <li><p><strong>module</strong>:定义对模块的处理逻辑</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>module: { // 操作模块
+    loaders: [ //加载器
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader?presets[]=es2015&amp;presets[]=react'
         }
-        oSearch.onmouseover=function(){
-            oSearch.className='search hover';
-        }
-        oSearch.onmouseout=function(){
-            oSearch.className='search';
-        }
-        oSearch.onfocus=function(){
-            oSearch.style.border='1px solid #38f';
-            if(oSearch.value!=''){
-                oUl.style.display='block';
-            }
-        }
-        document.onclick=function(){
-            oSearch.style.border='';
-            oUl.style.display='none';
-        }
-        oSearch.onclick=function(ev){
-            var ev=ev||window.event;
-            ev.cancelBubble=true;
-        }
-        oSearch.onkeyup=function(ev){
-            var oScript=document.createElement('script');
-            oScript.src='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+oSearch.value+'&amp;cb=baidu';
-            document.body.appendChild(oScript);
-            var aScript=document.getElementsByTagName('script');
-            for (var i = 0; i &lt; aScript.length; i++) {
-            //删除之前创建的全部script节点;
-                    document.body.removeChild(aScript[i]);
-            };
-            var ev=ev||window.event;
-            if(ev.keyCode==13){//输入框回车搜索;
-                oBtn.onclick();
-            };
-        }
-        oBtn.onclick=function(){//点击搜索;
-            location.href='https://www.baidu.com/s?ie=utf-8&amp;f=3&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd='+oSearch.value;
-        }
-        oSearch.focus();//默认输入框选中;
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+}
+</code></pre></div><ul><li><p><strong>loaders</strong>:所有引入的模块都是通过这个配置属性来解析</p></li> <li><p><strong>resolve</strong>:影响对模块的解析</p></li> <li><p><strong>extensions</strong>:识别文件后缀名</p></li> <li><p><strong>plugins</strong>:配置插件。</p> <p>3.loader</p></li> <li><p><strong>babel-loader</strong>:js 语法解析的加载器；需要配合安装
+“babel-core”:babel 的核心
+&quot;babel-preset-es2015&quot;:按需下载自己需要的解析器
+&quot;babel-preset-react&quot;:JSx 语法解析</p></li> <li><p>test 属性是使用正则来匹配文件.</p></li> <li><p>exclude:可以将不需要编译的文件排除在外;</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>{   test: /\.js$/,
+    exclude: /node_modules/,
+    loader: 'babel-loader?presets[]=es2015&amp;presets[]=react'
+}
+</code></pre></div><ul><li><strong>sass-loader</strong>、<strong>css-loader</strong>、<strong>style-loader</strong>：
+这三个配合使用可以将 sass 文件编译成 css 文件并且加载在 HTML 文件的 style 标签中。需要注意的是 loader 加载器是从右到左的顺序加载的。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    test: /\.scss$/,
+    loader: ['style-loader', 'css-loader', 'sass-loader']
+}
+</code></pre></div><p>其中的 loader 可以缩写成：<code>'style-loader!css-loader!sass-loader'</code></p> <ul><li><p><strong>url-loader</strong>:
+将图片文件转换成 base64 引入;大于限制的自动使用 file-loader 迁入到./images/目录下，文件名后面追加了 8 位的 hash 值;
+{
+test: /.(png|jpg|gif)$/,
+loader: 'url-loader?limit=12000&amp;name=./images/[name].[hash:8].[ext]'
+}</p></li> <li><p><strong>file-loader</strong>:配置后可以将引入的字体文件打包到 font 文件下,;</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>{
+    // 匹配字体文件;打包到build文件下
+    test: /\.(woff|woff2|svg|eot|ttf)$/, //
+    loader: 'file-loader?name=./fonts/[name].[ext]'
+}
+</code></pre></div><p><strong>注意</strong>：这里的相对路径都是在出口文件的目录下生成的。</p> <p><strong>基本配置文件</strong>:</p> <div class="language- extra-class"><pre class="language-text"><code>var path = require('path');
+var webpack = require('webpack');
+
+module.exports = {
+	entry: './src/index.js', // 入口文件
+	output: { // 出口文件
+		path: path.resolve(__dirname, './build'),
+		publicPath: '/build/',
+		filename: 'bundle.js' //输出文件
+	},
+	module: { // 操作模块
+		loaders: [ //加载器
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader?presets[]=es2015&amp;presets[]=react'
+			},
+			{
+				test: /\.scss$/,
+				loader: ['style-loader', 'css-loader', 'sass-loader?sourceMap']
+			},
+			{
+				test: /\.(png|jpg|gif)$/,
+				loader: 'url-loader?limit=12000&amp;name=./images/[name].[hash:8].[ext]'
+				//将小于12k的图片转换到base64引入;大于的使用file-loader迁入到./build/images/目录下;
+			},
+			{　　　　　　
+				test: /\.html$/, //处理html里的文件资源
+				loader: 'html-withimg-loader'　　　　
+			},
+			{
+				// 匹配字体文件;打包到build文件下
+				test: /\.(woff|woff2|svg|eot|ttf)$/, //
+				loader: 'file-loader?name=./fonts/[name].[ext]'
+			},
+			{
+				//打包到build文件下
+				test: /\.php$/, //
+				loader: 'file-loader?name=./php/[name].[ext]'
+			}
+		]
+	}
+}
+
 </code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-70334359></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
-    <script src="/assets/js/app.6ff0263c.js" defer></script><script src="/assets/js/4.f287a95f.js" defer></script><script src="/assets/js/1.d9424b70.js" defer></script><script src="/assets/js/27.f155313a.js" defer></script>
+    <script src="/assets/js/app.6ff0263c.js" defer></script><script src="/assets/js/4.f287a95f.js" defer></script><script src="/assets/js/1.d9424b70.js" defer></script><script src="/assets/js/22.24797963.js" defer></script>
   </body>
 </html>
