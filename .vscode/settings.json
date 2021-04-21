@@ -1,0 +1,6 @@
+{
+  "markdown-preview-enhanced.imageFolderPath": "/.vuepress/public",
+  "pasteImage.basePath": "${projectRoot}/.vuepress/public/",
+  "pasteImage.path": "${projectRoot}/.vuepress/public/img/",
+  "pasteImage.prefix": "/"
+}

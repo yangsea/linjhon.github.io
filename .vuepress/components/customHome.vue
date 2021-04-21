@@ -1,6 +1,6 @@
 <template>
   <div class="home-blog">
-    <div class="hero" :style="{...bgImageStyle}">
+    <div class="hero" :style="{ ...bgImageStyle }">
       <div>
         <ModuleTransition>
           <img
@@ -137,6 +137,7 @@ export default defineComponent({
       const url = instance.$frontmatter.bgImage
         ? instance.$withBase(instance.$frontmatter.bgImage)
         : require("../assets/img/bg.svg");
+      // require("../assets/img/bg_autumn_leaves.jpg");
 
       const initBgImageStyle = {
         textAlign: "center",

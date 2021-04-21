@@ -18,13 +18,9 @@ jobs:
         with:
           persist-credentials: false
 
-      # export env
-      - name: Export
-        run: export VALINE_APPKEY=${{ secrets.VALINE_APPKEY }} VALINE_APPID=${{ secrets.VALINE_APPID }}
-
       # 生成静态文件
       - name: Build
-        run: npm install && npm run build
+        run: export VALINE_APPKEY=${{ secrets.VALINE_APPKEY }} VALINE_APPID=${{ secrets.VALINE_APPID }} && npm install && npm run build
 
       # 部署到 GitHub Pages
       - name: Deploy
