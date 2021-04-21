@@ -1,52 +1,60 @@
 ---
 title: 移动端插件IScroll.js
 date: 2017-03-26 00:05
+tags:
+  - javascript
+  - IScroll.js
+  - 移动端
 ---
 
 > IScroll.js 插件是兼容所有移动端滚动条事件的插件，在某些安卓机中，我们无法通过`overflo:scroll`这个 css 属性来出现滚动条；它也可以非常好的在一个容器元素中处理滚动;
 
-##注意
+## 注意
+
 在使用 IScroll.js 必须要有 3 层元素嵌套，如：
 
-```
+```html
 <div class="food-left">
-    <ul class="food-nav">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+  <ul class="food-nav">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </div>
 ```
 
 最外层的`food-left`必须要有两个 css 样式：`position:relative;`和`overflow:hidden`。
 
-##初始化
+## 初始化
+
 IScroll.js 给我们暴露了一个 IScroll 构造函数;
 如下，我们进行了初始化
 
-```
+```html
 <script type="text/javascript">
-      leftScroll = new IScroll(".food-left");
+  leftScroll = new IScroll(".food-left");
 </script>
 ```
 
 构造函数中传入的实参，与 ES6 新增的`querySelector`参数一致；其实`querySelector`就与我们的 jQuery 选择器使用方式是一样的；
 **注意**：我们必须在 DOM 结构加载完毕后才能初始化，否则会无效。
 
-##设置
+## 设置
+
 IScroll.js 允许我们传入第二个参数来配置滚动事件的属性;
 
-```
-leftScroll = new IScroll(".food-left", {
-       scrollbars: true,
-       bounce: false,
-       mouseWheel:true,
-       click:true
+```js
+var leftScroll = new IScroll(".food-left", {
+  scrollbars: true,
+  bounce: false,
+  mouseWheel: true,
+  click: true,
 });
 ```
 
-- #####滚动条
+## 滚动条
+
 - **scrollbars: true**  
   是否显示滚动条。`默认为false;`
 - **fadeScrollbars:true**
@@ -69,7 +77,8 @@ leftScroll = new IScroll(".food-left", {
 - **startX**、**startY**
   设置滚动条初始偏移位置；`默认为无;`
 
-##方法
+## 方法
+
 IScroll.js 也给我们提供一些方便的方法,当然都是实例对象下的；
 
 - rightScroll.scrollToElement(el, time, offsetX, offsetY, easing)
@@ -79,4 +88,5 @@ IScroll.js 也给我们提供一些方便的方法,当然都是实例对象下�
   可以滚动到任意的位置，默认位置是 0，如果要移动需要设置负数；
 
 事例：
+
 ![IScroll.gif](http://upload-images.jianshu.io/upload_images/912092-37edf6eeffa24dea.gif?imageMogr2/auto-orient/strip)

@@ -1,13 +1,19 @@
 ---
 title: vue +nodejs 博客后台管理系统
 date: 2017-05-20 20:56:01
+tags:
+  - Vue
+  - express
+  - MongoDB
 ---
 
-> 一个 Vue + nodejs +MongoDB 后台管理系统。到现在大概 5 天的时间，先写个总结。
+:::tip
+一个 Vue + nodejs + MongoDB 后台管理系统。到现在大概 5 天的时间，先写个总结。
 
-> Vue 负责前端页面的展示，路由功能交给 Vue-router。
+Vue 负责前端页面的展示，路由功能交给 Vue-router。
 
-> Express 不写路由，只负责写 api 接口， 使用 mongoose 与 MongoDB 数据库进行数据交互，实现前后端解耦。
+Express 不写路由，只负责写 api 接口， 使用 mongoose 与 MongoDB 数据库进行数据交互，实现前后端解耦。
+:::
 
 在 UI 框架的选型上还是不太满意，写过之后才发现 Iview 框架有不少的缺陷，比如 menu 菜单中缺少路由跳转功能，需要通过点击事件返回的`name`值，通过编程式导航的方式来进行路由跳转`router.push()`，再来就是文档写得并不是很好，虽然 ui 效果很好。
 
@@ -33,9 +39,9 @@ MongoDB
 
 本地需要安装 mongodb 数据库
 
-##客户端 client
+## 客户端 client
 
-```
+```sh
 //打开目录
  cd client
 
@@ -51,7 +57,7 @@ npm run build
 
 ## 服务端 server
 
-```
+```sh
  cd server
 
  npm i
@@ -60,7 +66,7 @@ npm run build
  npm run start
 ```
 
-##功能
+## 功能
 
 - [x] 用户、文章、评论实现增删改查；
 - [x] 基于 JWT 的登陆验证、状态留存；
@@ -77,7 +83,7 @@ npm run build
 
 **客户端目录**
 
-```
+```sh
 |____client
 | |____.babelrc
 | |____index.html
@@ -115,7 +121,7 @@ npm run build
 
 ** 服务端目录**
 
-```
+```sh
 |____server
 | |____app.js
 | |____bin
@@ -160,6 +166,6 @@ npm run build
 |____UPDATE.md
 ```
 
-##项目地址
+<!-- ## 项目地址 -->
 
-[Github 地址](https://github.com/linqiang007/Back-stage-Management)
+[Github 地址](https://github.com/linjhon/Back-stage-Management)
