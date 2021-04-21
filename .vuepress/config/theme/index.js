@@ -23,8 +23,8 @@ module.exports = {
   logo: "/img/maple_leaf.png",
   // valine 设置
   valineConfig: {
-    appId: "YL6Q6eac5NNclQuOm0giKqn0-9Nh9j0Va",
-    appKey: "qJTXGWmCSWg6O5WdsDS4nTXq",
+    appId: process.env.VALINE_APPID,
+    appKey: process.env.VALINE_APPKEY,
     placeholder: "填写邮箱可以收到回复提醒哦！",
     verify: true, // 验证码服务
     recordIP: true,

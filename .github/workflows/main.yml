@@ -20,6 +20,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
+        run: export VALINE_APPKEY=${{ secrets.VALINE_APPKEY }} VALINE_APPID=${{ secrets.VALINE_APPID }} 
         run: npm install && npm run build
 
       # 部署到 GitHub Pages
