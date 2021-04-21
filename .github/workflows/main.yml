@@ -1,5 +1,9 @@
 name: Deploy GitHub Pages
 
+env:
+  VALINE_APPKEY: ${{ secrets.VALINE_APPKEY }}
+  VALINE_APPID: ${{ secrets.VALINE_APPID }}
+
 # 触发条件：在 push 到 main 分支后
 on:
   push:
@@ -20,7 +24,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: export VALINE_APPKEY=${{ secrets.VALINE_APPKEY }} VALINE_APPID=${{ secrets.VALINE_APPID }} && npm install && npm run build
+        run: npm install && npm run build
 
       # 部署到 GitHub Pages
       - name: Deploy
