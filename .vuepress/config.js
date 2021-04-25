@@ -4,6 +4,8 @@ var plugins = require("./config/plugins");
 
 var themeConfig = require("./config/theme");
 
+var markdown = require("./config/markdown");
+
 module.exports = {
   title: "叶落秋明",
   extraWatchFiles: [
@@ -12,6 +14,7 @@ module.exports = {
   permalink: "/post/:year/:month/:day/:slug",
   theme: "reco",
   themeConfig,
+  markdown,
   plugins,
   locales: {
     "/": {
