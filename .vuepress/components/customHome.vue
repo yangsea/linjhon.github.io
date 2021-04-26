@@ -96,6 +96,7 @@ import {
   computed,
   getCurrentInstance,
   onMounted,
+  nextTick,
 } from "vue-demi";
 import TagList from "@theme/components/TagList";
 import FriendLink from "@theme/components/FriendLink";
@@ -153,8 +154,10 @@ export default defineComponent({
     });
 
     onMounted(() => {
-      state.heroHeight = document.querySelector(".hero").clientHeight;
-      state.recoShow = true;
+      nextTick().then(() => {
+        state.heroHeight = document.querySelector(".hero").clientHeight;
+        state.recoShow = true;
+      });
     });
 
     return {
