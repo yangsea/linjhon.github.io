@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "@vuepress/plugin-pwa": "^1.8.2",
-    "pinyin": "^2.10.2",
     "vuepress": "^1.8.2"
   },
   "devDependencies": {
@@ -14,17 +13,16 @@
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "markdown-it-task-lists": "^2.1.1",
-    "patch-package": "^6.4.7",
     "sass": "^1.32.11",
     "sass-loader": "^7.3.1",
+    "vuepress-plugin-pinyin-urls": "^1.0.4",
     "vuepress-theme-reco": "^1.6.6"
   },
   "scripts": {
     "dev": "vuepress dev",
     "build": "vuepress build",
     "server": "http-server .vuepress/dist",
-    "dist": "npm run build && npm run server",
-    "postinstall": "patch-package"
+    "dist": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",
