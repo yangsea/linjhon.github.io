@@ -19,8 +19,8 @@
     "vuepress-theme-reco": "^1.6.6"
   },
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
     "server": "http-server .vuepress/dist",
     "dist": "npm run build && npm run server"
   },

@@ -30,39 +30,43 @@ vue2 + vuex + vue-router + iview + axios/vue-axios + ES6
 nodejs + express +mongoose
 
 **工具**
+
 webpack
 
 **数据库**
+
 MongoDB
 
-#项目预览
+## 项目预览
 
 本地需要安装 mongodb 数据库
 
 ## 客户端 client
 
 ```sh
-//打开目录
+# 打开目录
  cd client
 
-//安装依赖包
+# 安装依赖包
  npm i
 
-//启动本地客户端服务器
+# 启动本地客户端服务器
 npm run dev
 
-//打包文件
+# 打包文件
 npm run build
 ```
 
 ## 服务端 server
 
 ```sh
+# 打开目录
  cd server
 
+# 安装依赖包
  npm i
 
-//开启服务器
+# 开启服务器
  npm run start
 ```
 
