@@ -1,14 +1,14 @@
 module.exports = {
   zh: [
     {
-      text: "文档",
+      text: "学习",
       icon: "reco-api",
       items: [
         {
-          text: "主题",
+          text: "开发",
           items: [
-            { text: "1.x", link: "/views/1.x/" },
-            { text: "0.x", link: "/views/0.x/" },
+            { text: "前端", link: "/learning/front-end/" },
+            { text: "服务器", link: "/learning/servers/" },
           ],
         },
         {
