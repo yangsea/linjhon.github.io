@@ -11,7 +11,6 @@ module.exports = {
   extraWatchFiles: [
     ".vuepress/config/**/**", // 使用相对路径
   ],
-  permalink: "/post/:year/:month/:day/:slug",
   theme: "reco",
   themeConfig,
   markdown,
