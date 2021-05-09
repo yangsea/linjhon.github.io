@@ -3,7 +3,7 @@ const path = require("path");
 
 const resolve = (dir) => path.join(__dirname, dir);
 
-let plugins = [["pinyin-urls"]];
+let plugins = [];
 
 // 自动添加当前目录下其他plugin
 fs.readdirSync(resolve("./")).forEach((key) => {
@@ -11,5 +11,7 @@ fs.readdirSync(resolve("./")).forEach((key) => {
   const pluginModule = require(resolve(key));
   plugins = plugins.concat(pluginModule);
 });
+
+plugins.push(["pinyin-urls"]);
 
 module.exports = plugins;
