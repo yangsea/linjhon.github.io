@@ -50,7 +50,7 @@ A: OEMs, ISVs and VARs that want the benefits of embedding commercial binaries o
 
 ## MariaDB 是怎么回事？会有被闭源的风险吗？
 
-这里得说一下 `MySQL` 之父 `Monty` ，他是 `MySQL` 第一行代码的作者，后来成立了 `MySQL AB` 对 `MySQL` 进行商业化运作，也是他给 `MySQL` 定的双许可模式。2008 年的时候 `MySQL` 被 `Sun` 收购，仅接着 2009 年又被 `Oracle` `收购。Monty` 没有加入 `Sun` ，而是又创立了一个新公司 `Monty Program AB`，在 `MySQL` 代码的基础上发布了新的分支，就称为 `MariaDB` 。发布 `MariaDB` 的原因，`Monty` 说是因为想要一个永远保持开源的 `MySQL` 替代品。吸取了 `MySQL` 的教训，`Money` 将 `MariaDB` 的版权交给了 `MariaDB` 基金会，一个非盈利性组织，以保持 `MariaDB` 能够永远开源。
+这里得说一下 `MySQL` 之父 `Monty` ，他是 `MySQL` 第一行代码的作者，后来成立了 `MySQL AB` 对 `MySQL` 进行商业化运作，也是他给 `MySQL` 定的双许可模式。2008 年的时候 `MySQL` 被 `Sun` 收购，仅接着 2009 年又被 `Oracle` 收购。`Monty` 没有加入 `Sun` ，而是又创立了一个新公司 `Monty Program AB`，在 `MySQL` 代码的基础上发布了新的分支，就称为 `MariaDB` 。发布 `MariaDB` 的原因，`Monty` 说是因为想要一个永远保持开源的 `MySQL` 替代品。吸取了 `MySQL` 的教训，`Money` 将 `MariaDB` 的版权交给了 `MariaDB` 基金会，一个非盈利性组织，以保持 `MariaDB` 能够永远开源。
 
 这里要说明的是，`MariaDB` 在 `MySQL` 的基础上开发是完全没问题的，因为 `MariaDB` 也是开源的，相当于是在遵守 `GPL` 的基础上使用 `MySQL`，即使往后 `Oracle` 将 `MySQL` 闭源了，也不会影响之前版本的 `GPL` 协议。就像你房子已经卖出去了，过一年之后涨价了，你也没有权利把房子要回来再按新价格卖一遍了。
 
