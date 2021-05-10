@@ -3,6 +3,8 @@ const path = require("path");
 
 const resolve = (dir) => path.join(__dirname, dir);
 
+const isProd = process.env.NODE_ENV == "production";
+
 let plugins = [];
 
 // 自动添加当前目录下其他plugin
@@ -11,6 +13,10 @@ fs.readdirSync(resolve("./")).forEach((key) => {
   const pluginModule = require(resolve(key));
   plugins = plugins.concat(pluginModule);
 });
+
+if (isProd) {
+  plugins.push(["git"]);
+}
 
 plugins.push(["pinyin-urls"]);
 
